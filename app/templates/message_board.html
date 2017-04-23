@@ -1,0 +1,70 @@
+<div class="row">
+  <div class="col-sm-9" ng-show="msgtableStatus">
+      <button class="btn-danger" ng-click="msgtableStatus=false">BACK</button>
+    <form name="create_message">
+      <div class="row">
+        <label class="col-md-3" for="message">Your Message</label><br>
+        <div class="form-group">
+          <input class="col-md-6 form-control" type="text" class="form-control underline-input" name="text" placeholder="Typing !!!!" ng-model="text" required>
+        </div>
+      </div>
+
+      <div class="bg-slategray lt wrap-reset mt-20 text-left">
+        <p class="m-0">
+          <a ng-click="post_message()" class="btn btn-primary b-0 text-uppercase pull-right" ng-disabled='form.$invalid'>Post</a>
+        </p>
+      </div>
+
+      <!-- <div class="bg-slategray lt wrap-reset mt-20 text-left">
+        <p class="m-0">
+          <a ng-click="delete_all_messages()" class="btn btn-danger b-0 text-uppercase pull-right" ng-disabled='form.$invalid'>Delete All</a>
+        </p>
+      </div> -->
+
+    </form>
+
+    <br><br><br>
+
+    <div>
+      <table class="table">
+        <thead>
+          <th>S. No</th>
+          <th>Message</th>
+          <th>Timestamp</th>
+        </thead>
+        <tbody ng-repeat="message in messages">
+          <td>{{$index + 1}}</td>
+          <td>{{message.text}}</td>
+          <td>{{message.created_on}}</td>
+          <!-- <td><button class="btn-danger" ng-click="delete_message(message.id)">delete</button></td> -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="col-sm-9" ng-hide="msgtableStatus">
+    <br><br>
+
+    <div>
+      <table class="table">
+        <thead>
+          <th>S. No</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+        </thead>
+        <tbody ng-repeat="message in userList">
+          <tr ng-click="selectedUser(message)">
+          <td>{{$index + 1}}</td>
+          <td>{{message.first_name}}</td>
+          <td>{{message.last_name}}</td>
+          <td>{{message.email}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+
+</div>

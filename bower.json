@@ -1,0 +1,19 @@
+{
+  "name": "paysense",
+  "authors": [
+    "Mushahid Khan <mushahidcs0054@gmail.com>"
+  ],
+  "description": "This is the frontend for Tratoli task",
+  "main": "",
+  "keywords": [
+    "tratoli",
+    "chatter"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/mushahid54",
+  "dependencies": {
+    "angular": "^1.6.3",
+    "angular-route": "^1.6.3",
+    "angular-ui-router": "^0.4.2"
+  }
+}

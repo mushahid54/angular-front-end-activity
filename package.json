@@ -1,0 +1,18 @@
+{
+  "name": "tratoli",
+  "version": "1.0.0",
+  "description": "This is the frontend for tratoli task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tratoli",
+    "chatter"
+  ],
+  "author": "Mushahid Khan",
+  "license": "MIT",
+  "dependencies": {
+    "gulp-connect": "^5.0.0"
+  }
+}

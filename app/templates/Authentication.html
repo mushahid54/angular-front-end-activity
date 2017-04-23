@@ -1,0 +1,69 @@
+<div class="row">
+  <div class="col-sm-9" ng-hide="msgtableStatusLogin">
+    <form name="create_message">
+        <div class="row">
+          <label class="col-md-3" for="message">Email</label>
+          <div class="form-group">
+            <input class="col-md-6 form-control" type="email" class="form-control underline-input" name="email" placeholder="Your Message e.g. Howdy" ng-model="email" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <label class="col-md-3" for="message">Password</label>
+          <div class="form-group">
+            <input class="col-md-6 form-control" type="password" class="form-control underline-input" name="password" placeholder="Your Message e.g. Howdy" ng-model="passowrd" required>
+          </div>
+        </div>
+        <br>
+        <button class="btn-success" ng-click="msgtableStatusLogin=true">SignUp</button>
+        <button class="btn-success" ng-click="userLogin()">SignIn</button>
+        <br>
+    </form>
+    <br>
+  </div>
+
+  <div class="col-sm-9" ng-show="msgtableStatusLogin">
+    <form name="create_message">
+        <div class="row">
+          <label class="col-md-3" for="message">First Name</label>
+          <div class="form-group">
+            <input class="col-md-6 form-control" type="text" class="form-control underline-input" name="text" placeholder="Your Message e.g. Howdy" ng-model="firstname" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <label class="col-md-3" for="message">Last Name</label>
+          <div class="form-group">
+            <input class="col-md-6 form-control" type="text" class="form-control underline-input" name="text" placeholder="Your Message e.g. Howdy" ng-model="lastname" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <label class="col-md-3" for="message">Username</label>
+          <div class="form-group">
+            <input class="col-md-6 form-control" type="text" class="form-control underline-input" name="text" placeholder="Your Message e.g. Howdy" ng-model="username" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <label class="col-md-3" for="message">Email</label>
+          <div class="form-group">
+            <input class="col-md-6 form-control" type="email" class="form-control underline-input" name="password" placeholder="Your Message e.g. Howdy" ng-model="email" required>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <label class="col-md-3" for="message">Password</label>
+          <div class="form-group">
+            <input class="col-md-6 form-control" type="password" class="form-control underline-input" name="password" placeholder="Your Message e.g. Howdy" ng-model="password" required>
+          </div>
+        </div>
+        <br>
+        <button class="btn-success" ng-click="msgtableStatusLogin=false">SignIN</button>
+        <button class="btn-danger" ng-click="userSingUp()">SignUp</button>
+    </form>
+    <br>
+  </div>
+
+</div>
