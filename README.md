@@ -1,7 +1,7 @@
-Tratoli Frontend
+Frontend
 ================
 
-This is the tratoli front end project to test the backend
+This is the front end project to test the backend
 
 Instructions to run the frontend locally
 ----------------------------------------
